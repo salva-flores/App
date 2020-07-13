@@ -24,7 +24,7 @@ namespace Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Name")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
