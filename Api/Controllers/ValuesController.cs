@@ -20,11 +20,11 @@ namespace DatingApp.API.Controllers
             this.context = context;
         }
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         
         //this was tehe original line
         //public ActionResult<IEnumerable<string>> Get()
-
         //IActionResult helps return HTTP content, but this is still synchronous
         // public IActionResult GetValues()
         public async Task<IActionResult> GetValues()
