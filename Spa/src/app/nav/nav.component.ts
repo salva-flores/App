@@ -18,9 +18,10 @@ export class NavComponent implements OnInit {
   // tslint:disable-next-line: typedef
   login() {
     this.authService.login(this.model).subscribe(next => {
-      console.log('Success');
+      console.log('Logged in!');
     }, error => {
-      console.log('Failed');
+      // console.log('Failed to Login');
+      console.log(error);
     });
   }
 
